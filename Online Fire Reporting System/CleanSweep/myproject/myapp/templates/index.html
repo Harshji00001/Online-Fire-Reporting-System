@@ -1,0 +1,377 @@
+{% include 'navbar.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <!-- Include your own custom CSS here -->
+
+<style>
+    #myCarousel {
+  height: 350px; /* replace with your desired height */
+}
+.carousel-item img {
+  height: 350px; /* replace with your desired height */
+}
+
+
+</style>
+
+    <meta charset="UTF-8">
+    <title>Index - Online Fire Reporting System</title>
+</head>
+<body>
+ <section class="section-gap">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/fire2.jpg' %}" alt="Slide 1" class="img-fluid">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/fire4.jpg' %}" alt="Slide 2" class="img-fluid">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/gallery-5.jpg' %}" alt="Slide 3" class="img-fluid">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  </section><!-- End Hero -->
+<!-- FEAUTURED SERVICE SECTION -->
+<section id="featured-services" class="mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <i class="fas fa-fire"></i>
+            <h4 class="card-title">Report a OFRS Collector</h4>
+            <p class="card-text">Quickly and easily report a fire using our online reporting system.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <i class="fas fa-clipboard-list"></i>
+            <h4 class="card-title">Track Your Report</h4>
+            <p class="card-text">Stay up-to-date on the status of your fire reports with our online tracking system.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h4 class="card-title">Emergency Alerts</h4>
+            <p class="card-text">Get notified of emergency situations and updates related to fires in your area.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END FEAUTURED SERVICE SECTION -->
+
+ <!-- ABOUT US SECTION -->
+<section id="about-us" class="section-bg">
+  <div class="container mt-2">
+    <div class="row ">
+      <div class="col-lg-6">
+        <img src="{% static 'images/gallery-5.jpg' %}" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-6">
+
+        <h3>We're Here to Keep You Safe</h3>
+        <p>The motto of the Department is “We Serve to Save”. To achieve this motto, it is always our endeavour to go promptly to the spot of fire or other accidents and strive to save life and property.</p>
+         <ul>
+              <li><i class="bi bi-check-circle"></i>Endeavour to prevent fire accidents by spreading fire-safety awareness.</li>
+              <li><i class="bi bi-check-circle"></i> To rescue people affected by floods, earthquake or other natural calamities.</li>
+              <li><i class="bi bi-check-circle"></i>To provide standby fire-safety arrangements at large gatherings and important public and private functions by charging a nominal amount for the service rendered.
+                The rates of charging can be seen in the section Hiring Charges.</li>
+            </ul>
+        <p>We also provide emergency alerts and important updates related to fires in your area. Our team is made up of experts in fire safety and technology, and we're committed to providing the best possible service to our users.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--END ABOUT US  SECTION -->
+
+<!--FIRE PREVENTION-->
+ <section id="fire-prevention" class="py-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <h2 class="mb-4">Fire Reporting Prevention Tips</h2>
+        <ul>
+          <li>Install smoke alarms on every level of your home</li>
+          <li>Test your smoke alarms once a month</li>
+          <li>Create a fire escape plan with your family</li>
+          <li>Practice your fire escape plan at least twice a year</li>
+          <li>Keep flammable materials away from heat sources</li>
+          <li>Store matches and lighters out of reach of children</li>
+        </ul>
+        <p class="mt-4"><a href="#" class="btn btn-danger btn-lg">Learn More</a></p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'images/pre.jpg' %}" alt="Fire Prevention" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--END FIRE PREVENTION-->
+
+  <!--  FEAUTURED  SECTION -->
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="feature-item">
+          <i class="fas fa-fire fa-3x"></i>
+          <h3>Fire Reporting</h3>
+          <p>Our online fire reporting system makes it easy to quickly report a fire in your area with just a few clicks.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="feature-item">
+          <i class="fas fa-bell fa-3x"></i>
+          <h3>Emergency Alerts</h3>
+          <p>Stay informed with emergency alerts about fires in your area, so you can take necessary precautions to stay safe.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="feature-item">
+          <i class="fas fa-check fa-3x"></i>
+          <h3>Track Your Report</h3>
+          <p>Track the status of your fire report, so you know what steps are being taken to address the situation.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="feature-item">
+          <i class="fas fa-map-marked-alt fa-3x"></i>
+          <h3>Location Tracking</h3>
+          <p>Our system allows you to report the location of the fire, so emergency responders can quickly locate and extinguish the fire.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="feature-item">
+          <i class="fas fa-users fa-3x"></i>
+          <h3>Collaboration</h3>
+          <p>Our system enables collaboration between multiple agencies and organizations to coordinate efforts and effectively manage fire incidents.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="feature-item">
+          <i class="fas fa-file-alt fa-3x"></i>
+          <h3>Detailed Reports</h3>
+          <p>Our system generates detailed reports of fire incidents, including the location, cause, and extent of damage, to aid in investigations and prevent future incidents.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- END FEAUTURED  SECTION -->
+
+ <!-- TEAM  SECTION -->
+
+
+<section id="team" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Our Team</h2>
+        <h3 class="section-subheading text-muted">We are a group of professionals who are passionate about Garbage Collector and dedicated to providing the best service to our community.</h3>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="{% static 'images/team/t1.jpg' %}" alt="">
+          <h4>Ravi Yadav</h4>
+          <p class="text-muted">OFRS Investigator</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="{% static 'images/team/t2.jpg' %}" alt="">
+          <h4>Bhushan Singh</h4>
+          <p class="text-muted">OFRS Inspector</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="{% static 'images/team/t3.jpg' %}" alt="">
+          <h4>Kiran Lal</h4>
+          <p class="text-muted">OFRS Engineer</p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item ">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="{% static 'images/team/t4.jpg' %}" alt="">
+          <h4>Sumit Kumar</h4>
+          <p class="text-muted">OFRS Prevention Officer</p>
+          <ul class="list-inline social-buttons">
+           <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+	  <div class="col-md-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="{% static 'images/team/t5.jpg' %}" alt="">
+          <h4>Rakesh Gupta</h4>
+          <p class="text-muted">OFRS Fighter</p>
+          <ul class="list-inline social-buttons">
+           <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+	  <div class="col-md-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="{% static 'images/team/t6.jpg' %}" alt="">
+          <h4>Naman Singh</h4>
+          <p class="text-muted">OFRS Fighter</p>
+          <ul class="list-inline social-buttons">
+           <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+	</div>
+</div>
+
+</section>
+ <!--END TEAM  SECTION -->
+
+</body>
+</html>
+{% include 'footer.html' %}
+
