@@ -1,0 +1,26 @@
+{% extends 'adminNavbar.html' %}
+{% block main %}
+{% load static %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for n in f %}
+    <tr>
+      <th scope="row">{{n.name}}</th>
+      <td>{{n.email}}</td>
+      <td>{{n.phone}}</td>
+      <td>{{n.address}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+{% endblock %}
